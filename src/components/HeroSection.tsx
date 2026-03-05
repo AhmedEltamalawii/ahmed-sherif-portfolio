@@ -44,13 +44,21 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex justify-center"
           >
-            <div className="relative w-full max-w-md">
-              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
-              <img
-                src={heroImage}
-                alt="Ahmed Sherif - Backend .NET Developer"
-                className="relative rounded-3xl shadow-card w-full object-cover"
-              />
+            <div className="relative w-72 sm:w-80 md:w-96 aspect-[3/4]">
+              {/* Outer glow */}
+              <div className="absolute -inset-3 bg-primary/20 rounded-[30px] blur-2xl animate-pulse" />
+              {/* Glowing border */}
+              <div className="absolute -inset-[3px] rounded-[27px] bg-gradient-to-br from-primary via-primary/40 to-primary/80 opacity-70" />
+              {/* Image container */}
+              <div className="relative w-full h-full rounded-[25px] overflow-hidden shadow-[0_20px_60px_-15px_hsl(217_91%_60%/0.3),0_10px_30px_-10px_hsl(220_30%_4%/0.6)]">
+                <img
+                  src={heroImage}
+                  alt="Ahmed Sherif - Backend .NET Developer"
+                  className="w-full h-full object-cover object-[center_15%]"
+                />
+                {/* Dark gradient overlay at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
+              </div>
             </div>
           </motion.div>
         </div>
