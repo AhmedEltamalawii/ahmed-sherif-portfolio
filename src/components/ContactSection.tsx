@@ -42,9 +42,9 @@ const ContactSection = () => {
                 <Mail size={20} className="text-primary" />
                 <span className="text-sm">ahmedsherifelatmalawii@gmail.com</span>
               </a>
-              <a href="https://linkedin.com/in/ahmedsherif" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://eg.linkedin.com/in/ahmed-sherif-eltamalawiii-a0a6122b6" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} className="text-primary" />
-                <span className="text-sm">linkedin.com/in/ahmedsherif</span>
+                <span className="text-sm">linkedin.com/in/ahmed-sherif-eltamalawiii</span>
               </a>
               <a href="https://github.com/AhmedEltamalawii" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Github size={20} className="text-primary" />
