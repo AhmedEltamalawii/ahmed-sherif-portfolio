@@ -46,9 +46,9 @@ const ContactSection = () => {
                 <Linkedin size={20} className="text-primary" />
                 <span className="text-sm">linkedin.com/in/ahmedsherif</span>
               </a>
-              <a href="https://github.com/ahmedsherif" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/AhmedEltamalawii" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Github size={20} className="text-primary" />
-                <span className="text-sm">github.com/ahmedsherif</span>
+                <span className="text-sm">github.com/AhmedEltamalawii</span>
               </a>
             </div>
           </motion.div>
