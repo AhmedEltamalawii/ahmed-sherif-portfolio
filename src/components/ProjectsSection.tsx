@@ -4,6 +4,20 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Mobile Bay Center",
+    desc: "A comprehensive e-commerce & management system for mobile devices. Streamlines mobile sales and inventory management with dynamic product catalog, admin dashboard, and responsive UI/UX.",
+    tech: [".NET Core 8", "C#", "SQL Server", "Entity Framework Core", "Bootstrap 5"],
+    github: "https://github.com/AhmedEltamalawii/MWBAYLY",
+    demo: "https://youtu.be/u_Qa-Yv5bow",
+  },
+  {
+    title: "FastFood Restaurant System",
+    desc: "Enterprise-grade restaurant solution with .NET 8. High-performance management for fast-food chains handling orders, inventory, and customers. Features Clean Architecture, RBAC, coupon engine, and order tracking.",
+    tech: ["ASP.NET Core 8", "MVC/Web API", "SQL Server", "Entity Framework Core", "Bootstrap 5"],
+    github: "",
+    demo: "https://youtu.be/63x99CnNrp4",
+  },
+  {
     title: "E-Commerce API System",
     desc: "Full-featured e-commerce backend with product, order, and user management. Built with clean architecture and JWT authentication.",
     tech: ["ASP.NET Core", "SQL Server", "JWT", "Entity Framework"],
