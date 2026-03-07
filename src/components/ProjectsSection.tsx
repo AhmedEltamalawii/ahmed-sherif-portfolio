@@ -57,16 +57,20 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button variant="hero" size="sm" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <Github size={16} /> GitHub
-                    </a>
-                  </Button>
-                  <Button variant="heroOutline" size="sm" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} /> Demo
-                    </a>
-                  </Button>
+                  {p.github && (
+                    <Button variant="hero" size="sm" asChild>
+                      <a href={p.github} target="_blank" rel="noopener noreferrer">
+                        <Github size={16} /> GitHub
+                      </a>
+                    </Button>
+                  )}
+                  {p.demo && (
+                    <Button variant="heroOutline" size="sm" asChild>
+                      <a href={p.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={16} /> Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>
