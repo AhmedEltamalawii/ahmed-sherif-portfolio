@@ -103,8 +103,8 @@ const ContactSection = () => {
               rows={5}
               className="bg-secondary/50 border-border"
             />
-            <Button variant="hero" size="lg" type="submit" className="w-full">
-              Send Message
+            <Button variant="hero" size="lg" type="submit" className="w-full" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </motion.form>
         </div>
