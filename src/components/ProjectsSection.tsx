@@ -5,14 +5,14 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "Mobile Bay Center",
-    desc: "A comprehensive e-commerce & management system for mobile devices. Streamlines mobile sales and inventory management with dynamic product catalog, admin dashboard, and responsive UI/UX.",
+    desc: "A full-featured e-commerce and inventory management platform built with ASP.NET Core MVC. Customers can browse, search, and explore mobile devices through a dynamic product catalog, while administrators gain complete control over inventory via a powerful dashboard. Features responsive UI with Bootstrap, robust data persistence using Entity Framework Core and SQL Server, and streamlined order management — demonstrating expertise in MVC architecture, database design, and scalable web applications with clean separation of concerns.",
     tech: [".NET Core 8", "C#", "SQL Server", "Entity Framework Core", "Bootstrap 5"],
     github: "https://github.com/AhmedEltamalawii/MWBAYLY",
     demo: "https://youtu.be/u_Qa-Yv5bow",
   },
   {
     title: "FastFood Restaurant System",
-    desc: "Enterprise-grade restaurant solution with .NET 8. High-performance management for fast-food chains handling orders, inventory, and customers. Features Clean Architecture, RBAC, coupon engine, and order tracking.",
+    desc: "A high-performance restaurant solution built with .NET 8, designed for fast-food chains to manage high-volume orders, inventory, and customer relationships. Implements Clean Architecture with Repository and Unit of Work patterns. Security is handled through ASP.NET Core Identity with role-based access for Administrators, Restaurant Managers, and Customers. Features an intelligent shopping cart, flexible discount engine with coupon support, full CRUD for menu items and categories, order tracking, and a responsive Bootstrap interface — showcasing modern .NET development, secure authentication, and enterprise architecture.",
     tech: ["ASP.NET Core 8", "MVC/Web API", "SQL Server", "Entity Framework Core", "Bootstrap 5"],
     github: "",
     demo: "https://youtu.be/63x99CnNrp4",
