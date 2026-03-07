@@ -10,10 +10,28 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Message sent!", description: "Thanks for reaching out. I'll get back to you soon." });
-    setForm({ name: "", email: "", message: "" });
+    setLoading(true);
+    try {
+      const res = await fetch("https://formspree.io/f/mojkavak", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        toast({ title: "Message sent!", description: "Thanks for reaching out. I'll get back to you soon." });
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        toast({ title: "Error", description: "Failed to send message. Please try again.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -85,8 +103,8 @@ const ContactSection = () => {
               rows={5}
               className="bg-secondary/50 border-border"
             />
-            <Button variant="hero" size="lg" type="submit" className="w-full">
-              Send Message
+            <Button variant="hero" size="lg" type="submit" className="w-full" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </motion.form>
         </div>
