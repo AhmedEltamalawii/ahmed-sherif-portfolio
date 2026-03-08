@@ -32,13 +32,6 @@ const projects = [
     demo: "https://youtu.be/E7J4JPFN69c",
   },
   {
-    title: "Secure Authentication System",
-    desc: "Complete registration and login system with token-based authentication and secure password handling.",
-    tech: ["ASP.NET Core", "JWT", "C#", "SQL Server"],
-    github: "",
-    demo: "",
-  },
-  {
     title: "Educational Academy",
     desc: "A comprehensive Learning Management System (LMS) built with Python Flask. The platform enables students to register, log in, enroll in courses, and access lessons, while administrators maintain full control over courses, lessons, tasks, and users. Features include secure authentication, profile management with image upload, course enrollment tracking, and complete CRUD operations for all educational content. Demonstrates full-stack development with Flask, database relationships, and role-based access control.",
     tech: ["Python", "Flask", "SQLAlchemy", "HTML/CSS", "Bootstrap"],
