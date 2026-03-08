@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const backend = [
   "ASP.NET Core", "C#", ".NET 6 / .NET 8", "RESTful APIs",
   "Entity Framework Core", "LINQ", "SQL Server", "Database Design",
-  "JWT Auth", "Clean Architecture", "SOLID Principles",
+  "JWT Auth", "Clean Architecture", "SOLID Principles", "SignalR", "N-Tier Architecture",
 ];
 
 const frontend = ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"];
