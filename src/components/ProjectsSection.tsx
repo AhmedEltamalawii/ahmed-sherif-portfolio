@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Task Management System",
-    desc: "Task tracking application built with MVC pattern in .NET, featuring role-based authentication and efficient database design for team productivity.",
+    desc: "A team productivity application built with ASP.NET MVC that streamlines task tracking and project collaboration. Features role-based authentication distinguishing Admin, Manager, and Team Member permissions, efficient database design for optimal performance, and intuitive task assignment workflows. Users can create, assign, track, and update tasks with priority levels, due dates, and status tracking. Built with .NET, SQL Server, and clean MVC architecture following industry best practices.",
     tech: ["ASP.NET MVC", ".NET", "SQL Server", "Role-Based Auth"],
     github: "https://github.com/AhmedEltamalawii/ToDoList",
     demo: "https://youtu.be/E7J4JPFN69c",
