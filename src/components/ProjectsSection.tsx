@@ -19,8 +19,8 @@ const projects = [
   },
   {
     title: "E-Commerce API System",
-    desc: "Full-featured e-commerce backend with product, order, and user management. Built with clean architecture and JWT authentication.",
-    tech: ["ASP.NET Core", "SQL Server", "JWT", "Entity Framework"],
+    desc: "A robust backend API solution designed to power modern e-commerce applications. Built on clean architecture principles, the system delivers secure, scalable endpoints for complete online store operations. Core functionality includes JWT-based authentication with distinct roles for Administrators and Customers, full CRUD operations for products and categories, persistent shopping cart management, and seamless Stripe payment processing. Additional features include automated email notifications for order confirmations and account activities, plus comprehensive user profile management allowing customers to update personal information and view order history. The API demonstrates expertise in secure authentication, payment integration, and service-based architecture.",
+    tech: ["ASP.NET Core", "SQL Server", "JWT", "Entity Framework", "Stripe", "Clean Architecture"],
     github: "https://github.com/AhmedEltamalawii/Ecommerce-APIS",
     demo: "",
   },
