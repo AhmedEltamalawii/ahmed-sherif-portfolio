@@ -45,6 +45,13 @@ const projects = [
     github: "https://github.com/AhmedEltamalawii/School-Acadmy-",
     demo: "https://youtu.be/pKhvfYncqI0",
   },
+  {
+    title: "Coffee Center",
+    desc: "A responsive coffee shop website built with pure HTML and CSS, showcasing modern web design principles. Features a clean, inviting layout that adapts seamlessly to all screen sizes from mobile to desktop. The site includes intuitive navigation, appealing visual design, and is hosted live on Firebase for reliable global access. Demonstrates proficiency in front-end development, responsive design techniques, and Firebase deployment.",
+    tech: ["HTML", "CSS", "Responsive Design", "Firebase"],
+    github: "",
+    demo: "https://coffee-spark-sample-app-cd78d.web.app",
+  },
 ];
 
 const ProjectsSection = () => {
