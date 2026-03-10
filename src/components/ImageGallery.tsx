@@ -1,7 +1,10 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Grid3X3, LayoutGrid, GalleryHorizontal, Images } from "lucide-react";
-import ImageLightbox, { type GalleryImage } from "./ImageLightbox";
+import ImageLightbox from "./ImageLightbox";
+import type { GalleryImage } from "./ImageLightbox";
+
+export type { GalleryImage };
 
 type ViewMode = "grid" | "masonry" | "carousel";
 
