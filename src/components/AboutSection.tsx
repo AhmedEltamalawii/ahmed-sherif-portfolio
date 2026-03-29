@@ -20,14 +20,20 @@ const AboutSection = () => {
           className="max-w-3xl mx-auto text-center"
         >
           <p className="text-primary font-medium mb-2 uppercase tracking-wider text-sm">About Me</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-8">
-            Passionate <span className="text-gradient">Backend Developer</span>
+          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+            The Architectural <span className="text-gradient">Perspective</span>
           </h2>
+          <p className="text-primary/80 font-medium text-lg mb-8 font-display">
+            Software Engineering Student & Full-Stack .NET Developer
+          </p>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Ahmed Sherif is a passionate Backend .NET Developer with strong experience in building scalable, secure, and high-performance web applications. He specializes in ASP.NET Core, RESTful APIs, and SQL Server, with a solid understanding of system architecture and backend optimization.
+            I am a Senior Software Engineering student at the Faculty of Information Technology, dedicated to building end-to-end web applications that are as robust as they are scalable.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            With a core focus on <span className="text-foreground font-medium">Backend Architecture</span>, I specialize in transforming complex business requirements into high-performance digital solutions. My approach combines the precision of ASP.NET Core and SQL Server with the flexibility of modern frontend tools.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-12">
-            With a problem-solving mindset and attention to clean code principles, Ahmed focuses on writing maintainable, efficient, and scalable solutions that power modern digital platforms.
+            I don't just build features; I architect systems using <span className="text-foreground font-medium">Clean Code</span> and <span className="text-foreground font-medium">SOLID principles</span> to ensure every project is maintainable, secure, and production-ready from the database layer to the user interface.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
@@ -50,5 +56,4 @@ const AboutSection = () => {
     </section>
   );
 };
-
 export default AboutSection;
