@@ -8,7 +8,7 @@ const backend = [
 
 const frontend = ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"];
 
-const tools = ["Git & GitHub", "Visual Studio", "Postman", "Docker"];
+const tools = ["Git & GitHub", "Visual Studio", "Postman", "Docker", "SDLC"];
 
 const SkillGroup = ({ title, skills, delay }: { title: string; skills: string[]; delay: number }) => (
   <motion.div
