@@ -1,4 +1,4 @@
-import { Server, Shield, CreditCard, Database, Layout, Code2, Layers, Workflow } from "lucide-react";
+import { Server, Shield, CreditCard, Database, Layout, Code2, Layers, Workflow, Hotel, Mail, CalendarCheck } from "lucide-react";
 import { createElement } from "react";
 import type { GalleryImage } from "@/components/ImageGallery";
 
