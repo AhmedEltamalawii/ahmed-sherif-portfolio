@@ -35,11 +35,16 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-3 mt-auto">
-                  {p.github && (
+                  {p.github && p.github !== "private" && (
                     <Button variant="hero" size="sm" asChild>
                       <a href={p.github} target="_blank" rel="noopener noreferrer">
                         <Github size={16} /> GitHub
                       </a>
+                    </Button>
+                  )}
+                  {p.github === "private" && (
+                    <Button variant="hero" size="sm" className="cursor-default opacity-80 text-xs">
+                      <Github size={16} /> Private
                     </Button>
                   )}
                   {p.demo && (
