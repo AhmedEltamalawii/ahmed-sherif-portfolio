@@ -103,11 +103,16 @@ const ProjectDetail = () => {
 
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-3 mt-auto pt-6 border-t border-border">
-                  {project.github && (
+                  {project.github && project.github !== "private" && (
                     <Button variant="hero" size="sm" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github size={16} /> View on GitHub
                       </a>
+                    </Button>
+                  )}
+                  {project.github === "private" && (
+                    <Button variant="hero" size="sm" className="cursor-default opacity-80">
+                      <Github size={16} /> Private Repo — Contact Me
                     </Button>
                   )}
                   {project.demo && (
