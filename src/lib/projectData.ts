@@ -16,7 +16,7 @@ export interface ProjectDetail {
 }
 
 export const iconMap: Record<string, any> = {
-  Layout, Shield, Database, Layers, Workflow, CreditCard, Server, Code2,
+  Layout, Shield, Database, Layers, Workflow, CreditCard, Server, Code2, Hotel, Mail, CalendarCheck,
 };
 
 export const techColors: Record<string, string> = {
