@@ -187,10 +187,9 @@ export const projects: ProjectDetail[] = [
     github: "",
     demo: "https://coffee-spark-sample-app-cd78d.web.app",
     images: [
-      { src: "/placeholder.svg", title: "Landing Page", description: "Coffee shop homepage", category: "screenshot" },
-      { src: "/placeholder.svg", title: "Menu Section", description: "Coffee menu display", category: "screenshot" },
-      { src: "/placeholder.svg", title: "Mobile Home", description: "Mobile responsive view", category: "mobile" },
-      { src: "/placeholder.svg", title: "UI Mockup", description: "Design mockup", category: "mockup" },
+      { src: "/images/coffee-home.png", title: "Landing Page", description: "Coffee shop homepage with hero section", category: "screenshot" },
+      { src: "/images/coffee-menu.png", title: "Menu Section", description: "Popular menu items display", category: "screenshot" },
+      { src: "/images/coffee-testimonials.png", title: "Testimonials & Reservation", description: "Client reviews and booking area", category: "screenshot" },
     ],
   },
 ];
