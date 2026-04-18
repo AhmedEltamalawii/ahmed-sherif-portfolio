@@ -17,7 +17,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-primary font-medium mb-3 tracking-wider uppercase text-sm">Backend .NET Developer</p>
+            <p className="text-primary font-medium mb-3 tracking-wider uppercase text-sm">Software Engineer</p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Ahmed <span className="text-gradient">Sherif</span>
             </h1>
