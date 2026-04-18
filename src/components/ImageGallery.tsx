@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Grid3X3, LayoutGrid, GalleryHorizontal, Images } from "lucide-react";
+import { Grid3X3, LayoutGrid, GalleryHorizontal, Images, Play } from "lucide-react";
 import ImageLightbox from "./ImageLightbox";
 import type { GalleryImage } from "./ImageLightbox";
 
@@ -13,6 +13,7 @@ const categoryLabels: Record<GalleryImage["category"], string> = {
   mockup: "Mockups",
   diagram: "Diagrams",
   mobile: "Mobile",
+  video: "Videos",
 };
 
 interface ImageGalleryProps {
@@ -21,27 +22,48 @@ interface ImageGalleryProps {
 
 const BlurImage = ({ image, onClick }: { image: GalleryImage; onClick: () => void }) => {
   const [loaded, setLoaded] = useState(false);
+  const isVideo = image.type === "video";
 
   return (
     <div
       className="relative overflow-hidden rounded-lg border border-border cursor-pointer group"
       onClick={onClick}
     >
-      {!loaded && (
+      {!loaded && !isVideo && (
         <div className="absolute inset-0 bg-muted animate-pulse" />
       )}
-      <img
-        src={image.src}
-        alt={image.title || "Project image"}
-        className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:shadow-glow ${loaded ? "opacity-100" : "opacity-0"}`}
-        onLoad={() => setLoaded(true)}
-        loading="lazy"
-      />
-      <div className="absolute inset-0 bg-background/0 group-hover:bg-background/40 transition-colors duration-300 flex items-center justify-center">
-        <span className="text-foreground opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">
-          {image.title || "View"}
-        </span>
-      </div>
+      {isVideo ? (
+        <>
+          <video
+            src={image.src}
+            poster={image.poster}
+            muted
+            playsInline
+            preload="metadata"
+            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-background/30 group-hover:bg-background/50 transition-colors">
+            <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center shadow-glow">
+              <Play size={24} className="text-primary-foreground ml-1" fill="currentColor" />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <img
+            src={image.src}
+            alt={image.title || "Project image"}
+            className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:shadow-glow ${loaded ? "opacity-100" : "opacity-0"}`}
+            onLoad={() => setLoaded(true)}
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-background/0 group-hover:bg-background/40 transition-colors duration-300 flex items-center justify-center">
+            <span className="text-foreground opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">
+              {image.title || "View"}
+            </span>
+          </div>
+        </>
+      )}
     </div>
   );
 };

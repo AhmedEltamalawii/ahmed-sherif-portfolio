@@ -171,6 +171,7 @@ export const projects: ProjectDetail[] = [
     github: "https://github.com/AhmedEltamalawii/School-Acadmy-",
     demo: "https://youtu.be/pKhvfYncqI0",
     images: [
+      { src: "/videos/educational-academy.mp4", type: "video", title: "Platform Walkthrough", description: "Quick demo of the LMS in action", category: "video" },
       { src: "/placeholder.svg", title: "Course Catalog", description: "Browse available courses", category: "screenshot" },
       { src: "/placeholder.svg", title: "Student Dashboard", description: "Student enrolled courses", category: "screenshot" },
       { src: "/placeholder.svg", title: "Mobile View", description: "Responsive mobile layout", category: "mobile" },
