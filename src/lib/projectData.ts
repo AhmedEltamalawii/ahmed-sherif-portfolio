@@ -199,7 +199,7 @@ export const projects: ProjectDetail[] = [
     ],
     tech: ["HTML", "CSS", "JavaScript", "Responsive Design", "WhatsApp API"],
     github: "",
-    demo: "",
+    demo: "https://elegant-malabi-a9dffc.netlify.app/",
     images: [
       { src: "/placeholder.svg", title: "Admin Dashboard", description: "Full control panel for products and users", category: "screenshot" },
       { src: "/placeholder.svg", title: "Crop Management", description: "Manage staple and strategic crop categories", category: "screenshot" },
