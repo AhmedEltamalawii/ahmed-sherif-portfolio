@@ -6,7 +6,9 @@ export interface GalleryImage {
   src: string;
   title?: string;
   description?: string;
-  category: "screenshot" | "mockup" | "diagram" | "mobile";
+  category: "screenshot" | "mockup" | "diagram" | "mobile" | "video";
+  type?: "image" | "video";
+  poster?: string;
 }
 
 interface ImageLightboxProps {
@@ -89,16 +91,26 @@ const ImageLightbox = ({ images, currentIndex, isOpen, onClose, onNavigate }: Im
               </button>
             </div>
 
-            {/* Image */}
+            {/* Image or Video */}
             <div className="relative overflow-hidden rounded-xl border border-border bg-card">
               <div className="overflow-auto max-h-[80vh] flex items-center justify-center">
-                <img
-                  src={current.src}
-                  alt={current.title || "Project image"}
-                  className="transition-transform duration-300"
-                  style={{ transform: `scale(${zoom})`, transformOrigin: "center" }}
-                  draggable={false}
-                />
+                {current.type === "video" ? (
+                  <video
+                    src={current.src}
+                    poster={current.poster}
+                    controls
+                    autoPlay
+                    className="max-h-[80vh] w-full"
+                  />
+                ) : (
+                  <img
+                    src={current.src}
+                    alt={current.title || "Project image"}
+                    className="transition-transform duration-300"
+                    style={{ transform: `scale(${zoom})`, transformOrigin: "center" }}
+                    draggable={false}
+                  />
+                )}
               </div>
             </div>
 
