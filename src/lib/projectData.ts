@@ -81,6 +81,7 @@ export const projects: ProjectDetail[] = [
     github: "",
     demo: "https://youtu.be/63x99CnNrp4",
     images: [
+      { src: "/images/fastfood-homepage.jpg", title: "Homepage & Menu", description: "Welcome page with full menu catalog", category: "screenshot" },
       { src: "/images/fastfood-home.png", title: "Home & Menu", description: "Welcome page with product catalog", category: "screenshot" },
       { src: "/images/fastfood-product.png", title: "Product Details", description: "Item details with add to cart", category: "screenshot" },
       { src: "/images/fastfood-cart.png", title: "Shopping Cart", description: "Cart with promo codes & discounts", category: "screenshot" },
